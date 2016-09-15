@@ -119,7 +119,7 @@ public class PluginImpl extends Plugin {
     private String getISO8601Date() {
         if(date==null) {
             StringBuffer tstamp = new StringBuffer();
-            tstamp.append((new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ssZ")).format(new Date()));
+            tstamp.append((new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ")).format(new Date()));
             // hack to get ISO 8601 style timezone - is there a better way that doesn't require
             // a bunch of timezone offset calculations?
             tstamp.insert(tstamp.length()-2, ':');
